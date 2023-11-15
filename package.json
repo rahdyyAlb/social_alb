@@ -1,0 +1,20 @@
+{
+  "name": "social_alb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rahdyyAlb/social_alb.git",
+  "author": "rahdy <r.alibacari@students.fr",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "start": "npm run backend:start & npm run frontend:start",
+    "backend:start": "cd backend && npm start",
+    "frontend:start": "cd frontend && npm start",
+    "install": "npm install --prefix backend && npm install --prefix frontend  && npm install"
+  }
+
+}
