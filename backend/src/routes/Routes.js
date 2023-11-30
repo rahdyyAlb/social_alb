@@ -6,11 +6,11 @@ const PostController = require('../controllers/PostController');
 const router = express.Router();
 
 // Routes pour les utilisateurs
-router.post('/users', UserController.createUser);
+router.post('/user', UserController.createUser);
 router.get('/users', UserController.getAllUsers);
-router.get('/users/:id', UserController.getUserById);
-router.put('/users/:id', UserController.updateUserById);
-router.delete('/users/:id', UserController.deleteUserById);
+router.get('/user/:id', UserController.getUserById);
+router.put('/user/:id', UserController.updateUserById);
+router.delete('/user/:id', UserController.deleteUserById);
 
 // Routes pour les publications
 router.post('/posts', PostController.createPost);
